@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joan&family=Kdam+Thmor+Pro&family=Koulen&family=Titillium+Web&family=Tourney&display=swap');
 :root {
-	--main-color: #088f8f;
+	--main-color: #168063;
 	--text-color: #ffffff;
 	--text-inverse: #000000;
 }
@@ -359,11 +359,36 @@ a:hover{
     text-transform: uppercase;
 	font-size: 8vw;
 	margin-bottom: -20px;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .home-text-0:hover{
     color: var(--main-color);
     text-shadow: var(--main-color) 10px 10px 10px;
+}
+.home-text-0 span {
+	position: relative;
+    display: inline-block;
+    color: #fff;
+	cursor: pointer;
+}
+.home-text-0 span:hover{
+    animation: bounce 1s ease;
+	animation-fill-mode: forwards;
+}
+@keyframes bounce {
+100% {
+transform: translateY(-10px);
+text-shadow: 0 1px 0 var(--main-color),
+    0 2px 0 var(--main-color),
+    0 3px 0 var(--main-color),
+    0 4px 0 var(--main-color),
+    0 5px 0 var(--main-color),
+    0 6px 0 var(--main-color),
+    0 7px 0 var(--main-color),
+    0 8px 0 var(--main-color),
+    0 9px 0 var(--main-color),
+    0 50px 25px rgba(0, 0, 0, 0.2);
+}
 }
 .home-text{
 	font-family: 'Koulen', sans-serif;
