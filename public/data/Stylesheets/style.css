@@ -42,10 +42,15 @@ a:hover{
 	cursor: pointer;
 }
 .home-0{
-	background: linear-gradient(120deg, rgba(0,0,0,1) 20%, rgba(2,0,36,1) 35%, rgb(0, 0, 104) 40%, rgb(0, 7, 82) 60%, rgba(3,1,43,1) 75%, rgba(0,0,0,1) 80%);
+	background: linear-gradient(120deg, rgba(0,0,0,1) 20%, rgb(0, 36, 28) 35%, rgb(1, 69, 57) 40%, rgb(0, 67, 52) 60%, rgb(1, 43, 33) 75%, rgba(0,0,0,1) 80%);
 	background-size: 500%;
 	animation: animate 50s linear infinite;
 	z-index: 10;
+}
+@keyframes animate {
+	to{
+		background-position: 400%;
+	}
 }
 .home-0, .home-1{
 	border-bottom-right-radius: 30px;
@@ -438,7 +443,6 @@ u{
 }
 .logo-topped{
 	width: 25vw;
-    margin-bottom: -20px ;
 }
 .home-butt{
 	font-family: 'titillium web', sans-serif;
