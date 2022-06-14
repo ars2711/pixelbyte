@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joan&family=Kdam+Thmor+Pro&family=Koulen&family=Titillium+Web&family=Tourney&display=swap');
 :root {
-	--main-color: #168063;
+	--main-color: #088f8f;
 	--text-color: #ffffff;
 	--text-inverse: #000000;
 }
@@ -42,7 +42,7 @@ a:hover{
 	cursor: pointer;
 }
 .home-0{
-	background: linear-gradient(120deg, rgba(0,0,0,1) 20%, rgb(0, 36, 28) 35%, rgb(1, 69, 57) 40%, rgb(0, 67, 52) 60%, rgb(1, 43, 33) 75%, rgba(0,0,0,1) 80%);
+	background: linear-gradient(120deg, rgba(0,0,0,1) 20%, rgb(19, 120, 127) 35%, rgb(16, 79, 79) 40%, rgb(8, 101, 101) 60%, rgb(3, 92, 92) 75%, rgba(0,0,0,1) 80%);
 	background-size: 500%;
 	animation: animate 50s linear infinite;
 	z-index: 10;
@@ -71,16 +71,13 @@ a:hover{
 	align-content: center;
 	text-align: center;
 }
-
 .home-1 {
 	width: 100%;
 }
-
 .home-3{
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 }
-
 .home-4{
 	width: 80vw;
 	display: grid;
@@ -467,7 +464,8 @@ u{
 	text-decoration-color: var(--main-color);
 }
 .logo-topped{
-	width: 25vw;
+	width: 20vw;
+	margin: 10vh 0 40vw 40vw;
 }
 .home-butt{
 	font-family: 'titillium web', sans-serif;
