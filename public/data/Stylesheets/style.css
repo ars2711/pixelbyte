@@ -369,6 +369,7 @@ a:hover{
 	font-family: 'Tourney', sans-serif;
     text-transform: uppercase;
 	font-size: 8vw;
+	margin-top: ;
 	margin-bottom: -20px;
     transition: all 1s ease-in-out;
 	user-select: none;
@@ -783,6 +784,9 @@ u{
 	}
 }
 @media (max-width: 900px){
+	.home-text-0{
+		margin-top: 15vh ;
+	}
 	.menu-wrapper{
 		background-color: #222222;
 		position: fixed;
@@ -802,7 +806,7 @@ u{
 		text-align: center;
 		padding: 2vh 2vh;
 		text-decoration: none;
-		font-size: 7vw;
+		font-size: 100vw;
 		user-select: none;
 		cursor: pointer;
 	}
