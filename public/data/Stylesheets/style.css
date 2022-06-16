@@ -806,10 +806,11 @@ u{
 		text-align: center;
 		padding: 2vh 2vh;
 		text-decoration: none;
-		font-size: 100vw;
+		font-size: 5vw !important;
 		user-select: none;
 		cursor: pointer;
 	}
+
 	.nav-overlay{
 		display: none;
 		height: 0;
