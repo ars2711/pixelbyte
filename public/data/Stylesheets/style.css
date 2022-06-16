@@ -712,7 +712,7 @@ u{
 	font-family: 'koulen', sans-serif;
 	font-size: 7vw;
 	cursor: pointer;
-	transition: all 0.5s ease-in-out infinite;
+	transition: all 0.5S ease-in-out;
 }
 .support-buttons div:nth-child(n):hover{
 	transform: scale(1.05);
