@@ -368,9 +368,8 @@ a:hover{
 .home-text-0{
 	font-family: 'Tourney', sans-serif;
     text-transform: uppercase;
-	font-size: 8vw;
-	margin-top: ;
-	margin-bottom: -20px;
+	font-size: 24vh;
+	margin-bottom: 20px;
     transition: all 1s ease-in-out;
 	user-select: none;
 }
@@ -806,7 +805,7 @@ u{
 		text-align: center;
 		padding: 2vh 2vh;
 		text-decoration: none;
-		font-size: 5vw !important;
+		font-size: 10vh !important;
 		user-select: none;
 		cursor: pointer;
 	}
