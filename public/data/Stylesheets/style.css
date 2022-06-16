@@ -633,12 +633,18 @@ u{
 	display: grid;
 	grid-template-rows: 15% 80% 5%;
 }
+.marketplace div:nth-child(3) .material-symbols-outlined{
+	display: inline-flex;
+	font-size: 3vw !important;
+}
 .market-link{
+	display: flex;
+	font-size: 3.5vw !important;
 	font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 200,
   'GRAD' 0,
-  'opsz' 48
+  'opsz' 48 
 }
 .market-link:hover{
 	font-variation-settings:
