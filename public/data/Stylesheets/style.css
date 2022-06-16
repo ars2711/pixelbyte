@@ -636,22 +636,31 @@ u{
 .marketplace div:nth-child(3) .material-symbols-outlined{
 	display: inline-flex;
 	font-size: 3vw !important;
-}
-.market-link{
-	display: flex;
-	font-size: 3.5vw !important;
 	font-variation-settings:
   'FILL' 0,
   'wght' 200,
   'GRAD' 0,
   'opsz' 48 
 }
-.market-link:hover{
+.marketplace div:nth-child(3) .material-symbols-outlined:hover{
 	font-variation-settings:
   'FILL' 1,
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
+}
+.market-link{
+	display: flex;
+	font-size: 3.5vw !important;
+	font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48 !important
+	
+}
+.market-link:hover{
+	
 }
 .support{
 	display: grid;
