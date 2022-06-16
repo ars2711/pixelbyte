@@ -104,14 +104,14 @@ a:hover{
 	cursor: pointer;
 }
 .home-0{
-	background: linear-gradient(120deg, rgba(0,0,0,1) 20%, rgb(19, 120, 127) 35%, rgb(16, 79, 79) 50%, rgb(8, 101, 101) 55%, rgb(3, 92, 92) 60%, rgba(0,0,0,1) 80%);
+	background: linear-gradient(120deg, rgba(0,0,0,1) 20%, rgb(16, 79, 79) 49%, rgb(8, 101, 101) 50%, rgb(16, 79, 79) 51%, rgba(0,0,0,1) 80%);
 	background-size: 500%;
-	animation: animate 50s linear infinite;
+	animation: animate 20s linear infinite;
 	z-index: 10;
 }
 @keyframes animate {
 	to{
-		background-position: 400%;
+		background-position: 300%;
 	}
 }
 .home-0, .home-1{
@@ -225,11 +225,15 @@ a:hover{
 	box-sizing: border-box;
 }
 .nav-logo{
+	opacity: 0;
 	padding: 2vh 3vh;
 	float: left;
 	height: 8vh;
 	filter: grayscale(70%);
 	transition: all 0.5s ease-in-out;
+}
+.topnav-logo-active{
+	opacity: 100%;
 }
 .nav-logo:hover{
 	filter: none;
@@ -368,8 +372,8 @@ a:hover{
 .home-text-0{
 	font-family: 'Tourney', sans-serif;
     text-transform: uppercase;
-	font-size: 12.5vw;
-	margin-bottom: 20px;
+	font-size: 10vw;
+	margin-bottom: -5vh;
     transition: all 1s ease-in-out;
 	user-select: none;
 }
