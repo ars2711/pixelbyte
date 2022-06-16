@@ -368,7 +368,7 @@ a:hover{
 .home-text-0{
 	font-family: 'Tourney', sans-serif;
     text-transform: uppercase;
-	font-size: 24vh;
+	font-size: 12.5vw;
 	margin-bottom: 20px;
     transition: all 1s ease-in-out;
 	user-select: none;
@@ -392,15 +392,15 @@ a:hover{
 @keyframes bounce {
 100% {
 transform: translateY(-10px);
-text-shadow: 0 1px 0 #222222,
-    0 2px 0 #222222,
-    0 3px 0 #222222,
-    0 4px 0 #222222,
-    0 5px 0 #222222,
-    0 6px 0 #222222,
-    0 7px 0 #222222,
-    0 8px 0 #222222,
-    0 9px 0 #222222,
+text-shadow: 0 1px 0 #22222224,
+    0 2px 0 #22222224,
+    0 3px 0 #22222224,
+    0 4px 0 #22222224,
+    0 5px 0 #22222224,
+    0 6px 0 #22222224,
+    0 7px 0 #22222224,
+    0 8px 0 #22222224,
+    0 9px 0 #22222224,
     0 50px 25px rgba(0, 0, 0, 0.2);
 }
 }
