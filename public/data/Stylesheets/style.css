@@ -225,15 +225,17 @@ a:hover{
 	box-sizing: border-box;
 }
 .nav-logo{
-	opacity: 0;
 	padding: 2vh 3vh;
 	float: left;
 	height: 8vh;
 	filter: grayscale(70%);
 	transition: all 0.5s ease-in-out;
 }
+.topnav .nav-logo{
+	opacity: 0;
+}
 .topnav-logo-active{
-	opacity: 100%;
+	opacity: 100% !important;
 }
 .nav-logo:hover{
 	filter: none;
