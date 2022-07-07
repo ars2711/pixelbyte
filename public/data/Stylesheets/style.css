@@ -225,7 +225,7 @@ a:hover{
 .nav-logo{
 	padding: 1.1% 1%;
 	float: left;
-	height: 8vh;
+	height: 7vh;
 	filter: grayscale(70%);
 	transition: all 0.5s ease-in-out;
 }
@@ -753,7 +753,7 @@ u{
 	transition: all 0.5S ease-in-out;
 	max-width: 90%;
 	min-width: 50%;
-	height: auto;
+	height: 60%;
 }
 .support-buttons div:nth-child(n):hover{
 	transform: scale(1.05);
@@ -910,7 +910,7 @@ u{
 		text-align: center;
 		align-items: center;
 		margin-left: 10vw;
-		font-size: 10vh;
+		font-size: 5vh;
 	}
 	.nav-overlay div >.icons{
 		display: none;
