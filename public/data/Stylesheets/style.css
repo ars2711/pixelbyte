@@ -138,11 +138,14 @@ a:hover{
 	grid-template-columns: 25% 25% 25% 25%;
 }
 .home-4{
+	align-items: center;
+	align-content: center;
+	align-self: center;
 	width: 80vw;
 	display: grid;
 	grid-template-columns: 33.33% 33.33% 33.33%;
 	grid-gap: 20% 5%;
-	margin: 3vh 5%;
+	margin: 6vh 0 0 -9vw;
 }
 @media (max-width: 900px) {
 	.home-4 { 
@@ -152,17 +155,12 @@ a:hover{
 
 @media (max-width: 800px) {
 	.home-4 { 
-		grid-template-columns: repeat(2, 1fr); 
+		grid-template-columns: 50% 50%; 
 		grid-gap: 5% 5%;
 	}
 }
 
-@media (max-width: 650px) {
-	.home-4 { 
-		grid-template-columns: repeat(1, 1fr); 
-		grid-gap: 5% 5%;
-	}
-}
+
 
 .home-5{
 	width: 99vw;
@@ -225,7 +223,7 @@ a:hover{
 	box-sizing: border-box;
 }
 .nav-logo{
-	padding: 2vh 3vh;
+	padding: 1.1% 1%;
 	float: left;
 	height: 8vh;
 	filter: grayscale(70%);
@@ -601,22 +599,83 @@ u{
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
-  display: inline-block;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
   line-height: 1;
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  
+  user-select: none;
+}
+.market-wrapper{
+	height: 30vh;
+
+	margin-left: 3vw;
+}
+.market-titling{
+	display: grid;
+	grid-template-columns: 50% 40% 10%;
+	padding: 4vh 0;
+}
+.market-titling div:nth-child(1){
+	display: flex;
+	align-items: center;
+}
+.market-titling div:nth-child(2){
+	display: flex;
+	align-items: center;
+	text-align: right;
+	margin-right: 3vw;
+}
+.market-titling div:nth-child(2) a{
+	font-size: 3vw !important;
+}
+.market-titling div:nth-child(3){
+	display: flex;
+	align-items: center;
+	text-align: right;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	padding: 0;
+	font-size: 3.5vw !important;
+	user-select: none;
+}
+.market-titling div:nth-child(3):hover{
+	color: var(--main-color);
+}
+#mopen0:hover{
+	transform: translateY(1vh);
+}
+#mopen1{
+	color: gray;
+	cursor: not-allowed;
+	transition: all 0.5s ease-in-out;
+	transform: scale(1);
+}
+#mopen1:hover{
+	color: transparent;
+	transform: scale(0) translateX(-10vw);
+}
+#mktw0, #mktw1{
+	height: 0;
+	width: 0;
+	transition: all 1s ease-in-out;
+}
+#mktf0, #mktf1{
+	height: 0;
+	width: 0;
+	transition: all 1s ease-in-out;
 }
 .market-frame{
-	margin-top: 1vh;
-	height: 90%;
-	width: 90%;
+	display: block;
+	margin-top: 5vh;
+	border: none;
 }
 .marketplaces{
-	height: 100%;
+	height: auto;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	column-gap: 3vw;
@@ -628,8 +687,11 @@ u{
   'GRAD' 0,
   'opsz' 40
 }
+.market-wrapper div{
+	font-size: 3vw;
+}
 .marketplace{
-	height: 100vh;
+	height: auto;
 	display: grid;
 	grid-template-rows: 15% 80% 5%;
 }
@@ -651,10 +713,12 @@ u{
 }
 .market-link{
 	display: flex;
-	font-size: 3.5vw !important;
+	font-size: 3vw !important;
+	text-align: center;
+	align-items: center;
 	font-variation-settings:
   'FILL' 1,
-  'wght' 400,
+  'wght' 200 !important,
   'GRAD' 0,
   'opsz' 48 !important
 	
@@ -680,20 +744,23 @@ u{
 	display: flex;
 	background-color: #000000;
 	border: 5px solid var(--main-color);
-	padding: 2vh 3vw;
+	padding: 6% 3vw;
 	justify-content: center;
 	align-items: center;
 	font-family: 'koulen', sans-serif;
 	font-size: 7vw;
 	cursor: pointer;
 	transition: all 0.5S ease-in-out;
+	max-width: 90%;
+	min-width: 50%;
+	height: auto;
 }
 .support-buttons div:nth-child(n):hover{
 	transform: scale(1.05);
 	box-shadow: var(--main-color) 10px 10px 10px;
 }
 .support-buttons div:nth-child(n) img{
-	height: 90%;
+	height: 11vw;
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-right: 3vw;
@@ -710,20 +777,18 @@ u{
 	outline-width: 30px;
 	font-size: 3vw;
 	text-align: center;
-	display: flex;
+	display: block;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
 	transition: background-color 0.5s ease-in-out;
-	word-wrap: break-word;
+	padding: 7vh 0;
 }
 .pg-button:hover{
 	font-family: 'titillium web', sans-serif;
 	background-color: #088f8f88;
 }
-.pg-button > a{
-	padding: 30px 20px;
-}
+
 .pg-button:hover > a{
 	text-shadow:
 	-0.5px -0.5px 0 var(--text-color),
@@ -786,9 +851,7 @@ u{
 		column-count:         1;
 	}
 	.pg-button{
-		margin-top: 30px;
 		font-size: 27px;
-		padding: 5px;
 	}
 }
 
@@ -814,7 +877,7 @@ u{
 		font-family: 'titillium web', sans-serif;
 		width: 99vw;
 		z-index: 100;
-		height: 14vh;
+		height: 12vh;
 	}
 	.menu-wrapper .nav-logo{
 		padding: 3vh 3vh;
@@ -826,7 +889,7 @@ u{
 		text-align: center;
 		padding: 2vh 2vh;
 		text-decoration: none;
-		font-size: 10vh !important;
+		font-size: 8vh !important;
 		user-select: none;
 		cursor: pointer;
 	}
@@ -835,7 +898,7 @@ u{
 		display: none;
 		height: 0;
 		position: fixed;
-		margin-top: 14vh;
+		margin-top: 12vh;
 		width: 100%;
 		background-color: #000000e8;
 		z-index: 1000;
@@ -847,9 +910,11 @@ u{
 		text-align: center;
 		align-items: center;
 		margin-left: 10vw;
+		font-size: 10vh;
 	}
 	.nav-overlay div >.icons{
 		display: none;
+		font-size: 10vh !important;
 		color: var(--text-color);
 		padding-right: 0px;
 		transition: all 0.5s ease-in-out;

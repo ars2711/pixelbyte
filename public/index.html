@@ -69,12 +69,21 @@
     <section data-router-view="index">
     <div class="home-5">
       <div class="home-text2" id="tp"> <u>Our Marketplaces</u></br></div>
-      <div class="marketplaces">
+      <div class="market-wrapper"  id="mktg0"> 
         <div class="marketplace">
-          <div><a href="https://app.liquidifty.io/@PixelByte" class="material-icons-outlined market-link" target="_blank">store</a>Liquidifty Marketplace</div><div><iframe class="market-frame" src="https://app.liquidifty.io/@PixelByte" title="Liquidifty Marketplace - Pixelbyte"></iframe></div><div>Link: <a class="material-symbols-outlined" href="https://app.liquidifty.io/@PixelByte" target="_blank">open_in_new</a></div>
+          <div class="market-titling">
+            <div><a href="https://app.liquidifty.io/@PixelByte" class="material-icons-outlined market-link" target="_blank">store</a>Liquidifty Marketplace</div>
+            <div>Link: <a class="material-symbols-outlined" href="https://app.liquidifty.io/@PixelByte" target="_blank">open_in_new</a></div>
+            <div class="material-icons-outlined" id="mopen0">expand_more</div>
+          </div>
+            <div id="mktw0"><iframe class="market-frame" id="mktf0" src="https://app.liquidifty.io/@PixelByte" title="Liquidifty Marketplace - Pixelbyte"></iframe></div>
         </div>
         <div class="marketplace">
-          <div><a href="https://app.airnfts.com/creators/0x3103923722e92e791e8e3De5fdC90d5b8C5282F0" class="material-icons-outlined market-link" target="_blank">store</a>AirNFT Marketplace</div><div><iframe class="market-frame" src="https://app.airnfts.com/creators/0x3103923722e92e791e8e3De5fdC90d5b8C5282F0" title="AirNFT Marketplace - Pixelbyte"></iframe></div><div>Link: <a class="material-symbols-outlined" href="https://app.airnfts.com/creators/0x3103923722e92e791e8e3De5fdC90d5b8C5282F0" target="_blank">open_in_new</a></div>
+          <div class="market-titling">
+            <div><a href="https://app.airnfts.com/creators/0x3103923722e92e791e8e3De5fdC90d5b8C5282F0" class="material-icons-outlined market-link" target="_blank">store</a>AirNFT Marketplace</div>
+            <div>Link: <a class="material-symbols-outlined" href="https://app.airnfts.com/creators/0x3103923722e92e791e8e3De5fdC90d5b8C5282F0" target="_blank">open_in_new</a></div>
+            <div class="material-icons-outlined" id="mopen1">expand_more</div>
+          </div>
         </div>
       </div>
     </div>
@@ -93,14 +102,14 @@
     <div class="home-2">
       <div class="home-text2"> <u>Our Pages</u></br></div>
       <div class="blue-square4 relax" data-rellax-speed="3" style="transform: translate3d(0px, -122px, 0px) rotate(45deg);"></div>
-      <div class="home-4">
+      <center><div class="home-4">
         <div class="pg-button"><a href="#tp">Home</a></div>
         <div class="pg-button"><a href="pages/nft.html">NFTs</a></div>
         <div class="pg-button"><a href="pages/about.html">About Us</a></div>
         <div class="pg-button"><a href="pages/contact.html">Contact Us</a></div>
         <div class="pg-button"><a href="https://app.liquidifty.io/@PixelByte" target="_blank">Liquidifty Marketplace</a></div>
         <div class="pg-button"><a href="https://app.airnfts.com/creators/0x3103923722e92e791e8e3De5fdC90d5b8C5282F0" target="_blank">AirNFT Marketplace</a></div>
-      </div>
+      </div></center>
     </div>
     <div class="blue-square3 relax" data-rellax-speed="3" style="transform: translate3d(0px, -122px, 0px) rotate(45deg);"></div>
     </section>
@@ -111,6 +120,7 @@
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script>
       var rellax = new Rellax('.relax');
+      window.frames[1].stop()
     </script>
   </body>
 </html>
