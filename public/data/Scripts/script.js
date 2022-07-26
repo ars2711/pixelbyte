@@ -74,7 +74,7 @@ function mktdFunction() {
 const pypl = document.getElementById('paypal');
 pypl.onclick = function () { payPop() };
 function payPop() {
-    if (window.confirm('Send your donations to the Paypal ID:\n@muhammadzain2005\n\nNote: Clicking "OK" will redirect you to PayPal.\n;D')) 
+    if (window.confirm('Send your donations to the Paypal ID:\n@muhammadzain2005\n\nNote: Clicking "OK" will redirect you to the PayPal site.\n;D')) 
 {
 window.location.href='https://www.paypal.com/paypalme/muhammadzain2005?locale.x=en_US';
 };
