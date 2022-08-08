@@ -13,7 +13,6 @@ html, body {
 	background-color: #2c2c2c;
 	font-family: 'titillium web', sans-serif;
 }
-
 body::-webkit-scrollbar {
 	width: 1vw;
 }
@@ -30,21 +29,17 @@ body::-webkit-scrollbar-track {
   height: 13px;
   width: 16px;
 }
-/* Up */
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
   border-width: 0 0.5vw 0.5vw 0.5vw;
   border-color: transparent transparent #3b3b3b transparent;
 }
-
 ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
   border-color: transparent transparent var(--main-color) transparent;
 }
-/* Down */
 ::-webkit-scrollbar-button:single-button:vertical:increment {
   border-width: 0.5vw 0.5vw 0 0.5vw;
   border-color: #3b3b3b transparent transparent transparent;
 }
-
 ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   border-color: var(--main-color) transparent transparent transparent;
 }
@@ -53,7 +48,6 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 50px;
 	border: 1px solid var(--main-color);
 }
-
 body::-webkit-scrollbar-thumb:hover {
 	background-color: rgb(52, 52, 52);
 	cursor: pointer;
@@ -291,7 +285,6 @@ a:hover{
 	font-size: 1.4vw;
 	box-sizing: border-box;
 }
-
 .topnav .active:hover {
 	color: var(--text-color);
 	background-color: #499be83e;
@@ -300,7 +293,6 @@ a:hover{
 .active:hover .dropbtn{
 	color: var(--text-color);
 }
-
 .dropdown {
 	float: left;
 	overflow: hidden;
@@ -309,7 +301,6 @@ a:hover{
 	transition: all 0.5s ease-in-out;
 	transition-delay: 5ms;
 }
-
 .dropdown .dropbtn {
 	font-size: 1.4vw;  
 	border: none;
@@ -322,7 +313,6 @@ a:hover{
 	transition: all 0.5s ease-in-out;
 	transition-delay: 5ms;
 }
-
 .topnav > a:not(.topnav-text):hover, .dropdown:hover{
 	background-color: rgb(101, 99, 99);
 	color: var(--text-color);
@@ -335,11 +325,9 @@ a:hover{
 	padding-bottom: calc(2vh - 0.4vw);
 	box-sizing: border-box;
 }
-
 .dropdown:hover .dropbtn{
 	color: var(--text-color);
 }
-
 .dropdown-content {
 	display: none;
 	position: fixed;
@@ -349,7 +337,6 @@ a:hover{
 	z-index: 1;
 	transition: all 0.5s ease-in-out;
 }
-
 .dropdown-content a {
 	float: none;
 	color: rgb(255, 255, 255);
@@ -359,7 +346,6 @@ a:hover{
 	text-align: left;
 	border-bottom: var(--main-color);
 }
-
 .dropdown-content a:hover {
 	background-color: #242424af;
 	border-bottom-width: 0.3vw;
@@ -371,18 +357,15 @@ a:hover{
 	padding-bottom: calc(2vh - 0.3vw);
 	color: #a8d5ff;
 }
-
 .dropdown:hover .dropdown-content {
 	display: block;
 	margin-top: 2vh;
 	margin-left:-1.5vw;
 	z-index: 100;
 }
-
 @keyframes mymove {
 	50% {box-shadow: 20px 30px 40px var(--main-color);}
 }
-
 .home-text-0{
 	font-family: 'Tourney', sans-serif;
     text-transform: uppercase;
@@ -469,7 +452,6 @@ text-shadow: 0 1px 0 #22222224,
 	transform-origin: bottom right;
 	transition: transform 0.35s ease-out;
 }
-
 .home-text5:hover:after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
@@ -590,8 +572,6 @@ u{
 		right: 100%;
 	}
 }
-
-
 .home-butt span:nth-child(4){
 	bottom: -100%;
 	left: 0;
@@ -735,9 +715,7 @@ u{
   'wght' 200,
   'GRAD' 0,
   'opsz' 48 !important
-	
 }
-
 .socials, .socials2{
 	display: grid;
 	margin: 0 3vw;
@@ -858,7 +836,6 @@ u{
 	font-family: 'titillium web', sans-serif;
 	background-color: #088f8f88;
 }
-
 .pg-button:hover > a{
 	text-shadow:
 	-0.5px -0.5px 0 var(--text-color),
@@ -906,7 +883,6 @@ u{
 		width: 90%;
 	}
 }
-
 @media (max-width: 400px) {
 	.home-picture{
 		height: 100px;
@@ -924,7 +900,6 @@ u{
 		font-size: 27px;
 	}
 }
-
 @media (min-width: 900px){
 	.menu{
 		display: none;
@@ -963,7 +938,6 @@ u{
 		user-select: none;
 		cursor: pointer;
 	}
-
 	.nav-overlay{
 		display: none;
 		height: 0;
