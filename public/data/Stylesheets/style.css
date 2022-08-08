@@ -160,12 +160,10 @@ a:hover{
 	}
 }
 
-
-
 .home-5{
 	width: 99vw;
 	color: var(--text-color);
-	padding-bottom: 50px;
+	padding-bottom: 5vh;
 	z-index: -5;
 }
 
@@ -264,6 +262,22 @@ a:hover{
   	'FILL' 1,
   	'wght' 300,
   	'GRAD' 200,
+  	'opsz' 48
+}
+.active-nav-icon{
+	color: var(--main-color);
+	font-variation-settings:
+  	'FILL' 1,
+  	'wght' 300,
+  	'GRAD' 200,
+  	'opsz' 48
+}
+.active-nav-icon:hover{
+	color: var(--text-color);
+	font-variation-settings:
+  	'FILL' 0,
+  	'wght' 300,
+  	'GRAD' 0,
   	'opsz' 48
 }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
@@ -726,6 +740,61 @@ u{
 .market-link:hover{
 	
 }
+.socials, .socials2{
+	display: grid;
+	margin: 0 3vw;
+	font-size: 2.5vw;
+}
+.socials{
+	grid-template-columns: 25% 25% 25% 25%;
+}
+.socials2{
+	grid-template-columns: 50% 50%;
+}
+.socials > div, .socials2 > div{
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+.socials > div > p:hover, .socials2 > div > p:hover{
+	color: var(--main-color);
+	cursor: pointer;
+}
+.socials > div > div > img, .socials2 > div > div > img{
+	margin-top: 7vh;
+	height: 7vw;
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+}
+.socials > div > div > img:hover, .socials2 > div > div > img:hover{
+	filter: drop-shadow(1vw 1vw 7px var(--main-color));
+}
+.nft-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: right;
+	background: var(--text-inverse);
+	font-family: 'titillium web', sans-serif;
+	font-size: 3vw;
+	font-weight: bolder;
+	color: var(--main-color);
+	border: var(--main-color) solid 0.3vw;
+	border-radius: 0 2vw 0 2vw;
+	width: 20vw;
+	padding: 2vw 3vw;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+.nft-button:hover{
+	border-style: dashed;
+	color: var(--text-color);
+}
+.nft-button:active{
+	background-color: var(--text-color);
+	border-color: var(--text-inverse);
+	color: var(--main-color);
+	transition-duration: 0.1s;
+}
 .support{
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -765,6 +834,9 @@ u{
 	margin-bottom: auto;
 	margin-right: 3vw;
 }
+#icons-1{
+	font-size: 3.5vw !important;
+}
 .pg-button{
 	font-family: 'titillium web', sans-serif;
 	color: var(--text-color);
@@ -775,7 +847,7 @@ u{
 	border-bottom-left-radius: 25px;
 	outline-color: var(--main-color);
 	outline-width: 30px;
-	font-size: 3vw;
+	font-size: 4vw;
 	text-align: center;
 	display: block;
 	justify-content: center;
