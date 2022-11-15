@@ -878,6 +878,60 @@ u {
 .pattern path:nth-child(even) {
   fill: #d7d7d716;
 }
+.home-text2 > .material-symbols-outlined {
+  font-size: inherit;
+}
+.spacer {
+  width: 100%;
+  height: 20vh;
+}
+.splide__slide {
+  display: flex;
+  justify-content: center;
+}
+.splide__slide > a {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+}
+.splide__slide > a:hover {
+  color: inherit;
+}
+.splide {
+  margin: 0 3vw;
+}
+.slide-nft {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 75%;
+  border-radius: 2vw;
+  border: var(--main-color) 0.3vw solid;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out, height 0.5s ease-in-out;
+  height: 23vw;
+  overflow: hidden;
+}
+.slide-nft:hover {
+  background-color: #088f8fee;
+  height: 35vw;
+}
+.slide-nft > img {
+  width: 100%;
+  border-radius: inherit;
+}
+.slide-nft > p {
+  margin: 1vw 0;
+}
+.slide-nft > p:nth-child(2) {
+  font-size: 3vw;
+  font-family: "koulen", sans-serif;
+}
+.slide-nft > p:nth-child(3) {
+  font-size: 1.7vw;
+  font-family: "koulen", sans-serif;
+  margin-top: -1vw;
+}
 @media (max-width: 1200px) {
   .imageGallery {
     -moz-column-count: 4;

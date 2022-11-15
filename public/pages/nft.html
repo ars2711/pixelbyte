@@ -32,7 +32,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   </head>
   <body>
   <header>
@@ -85,8 +87,80 @@
     </div>
     <section data-router-view="index">
     <div class="home-5">
-      <p class="home-text2">Hot</p>
-      <div></div>
+      <p class="home-text2"><span class="material-symbols-outlined">mode_heat</span>Hot</p>
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <a href="">
+                <div class="slide-nft">
+                <img src="../data/Images/Micro.Shiba-1.png.png" alt="">
+                <p>Micro Shiba</p>
+                <p>The Micro Shiba Moon NFT</p>
+              </div>
+            </a>
+            </li>
+            <li class="splide__slide">
+              <a href="">
+                <div class="slide-nft">
+                <img src="../data/Images/Baby.Everdoge-1.png.(6).png" alt="">
+                <p>Baby EverDoge</p>
+                <p>The Baby EverDoge Moon NFT</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <a href="">
+                <div class="slide-nft">
+                <img src="../data/Images/Dogelon.Mars-1.png.png" alt="">
+                <p>Dogelon</p>
+                <p>The Dogelon Moon NFT</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <p class="home-text2"><span class="material-symbols-outlined">mode_heat</span>Hot</p>
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <a href="">
+                <div class="slide-nft">
+                <img src="../data/Images/Micro.Shiba-1.png.png" alt="">
+                <p>Micro Shiba</p>
+                <p>The Micro Shiba Moon NFT</p>
+              </div>
+            </a>
+            </li>
+            <li class="splide__slide">
+              <a href="">
+                <div class="slide-nft">
+                <img src="../data/Images/Baby.Everdoge-1.png.(6).png" alt="">
+                <p>Baby EverDoge</p>
+                <p>The Baby EverDoge Moon NFT</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <a href="">
+                <div class="slide-nft">
+                <img src="../data/Images/Dogelon.Mars-1.png.png" alt="">
+                <p>Dogelon</p>
+                <p>The Dogelon Moon NFT</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="spacer"></div>
+      <script>
+        var splide = new Splide( '.splide', {
+  type   : 'loop',
+  perPage: 3,
+  perMove: 1,
+} );
+
+splide.mount();
+      </script>
     </div>
     </section>
   </main>
