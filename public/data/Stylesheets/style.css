@@ -121,8 +121,8 @@ a:hover {
 }
 .home-0,
 .home-1 {
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 2vw;
+  border-bottom-left-radius: 2vw;
 }
 .home-0,
 .home-1,
@@ -135,6 +135,7 @@ a:hover {
 }
 .home-0 {
   height: 92.3vh;
+  overflow: hidden;
 }
 .home-2,
 .home-3,
@@ -867,6 +868,9 @@ u {
   z-index: 0;
   top: 0;
   left: 0;
+  height: 100%;
+  border-bottom-right-radius: 2vw;
+  border-bottom-left-radius: 2vw;
 }
 .pattern path:nth-child(odd) {
   fill: #bcbcbc16;
