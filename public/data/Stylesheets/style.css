@@ -216,7 +216,7 @@ a:hover {
   overflow: hidden;
   font-family: "titillium web", sans-serif;
   width: 100%;
-  z-index: 100;
+  z-index: 1000000;
   height: auto;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -403,7 +403,7 @@ a:hover {
   margin-bottom: -5vh;
   transition: all 1s ease-in-out;
   user-select: none;
-  z-index: 11;
+  z-index: 10;
 }
 .home-text-0:hover {
   color: var(--main-color);
@@ -439,6 +439,8 @@ a:hover {
   text-shadow: var(--main-color) 10px 10px 10px;
 }
 .home-text2 {
+  display: flex;
+  align-items: center;
   font-family: Koulen, sans-serif;
   font-size: 5vw;
   margin: 0px 3vw;
@@ -873,10 +875,10 @@ u {
   border-bottom-left-radius: 2vw;
 }
 .pattern path:nth-child(odd) {
-  fill: #bcbcbc16;
+  fill: #2c2c2c;
 }
 .pattern path:nth-child(even) {
-  fill: #d7d7d716;
+  fill: #2c2c2c;
 }
 .home-text2 > .material-symbols-outlined {
   font-size: inherit;
@@ -890,7 +892,7 @@ u {
   justify-content: center;
 }
 .splide__slide > a {
-  width: max-content;
+  width: fit-content;
   display: flex;
   justify-content: center;
 }
@@ -914,10 +916,16 @@ u {
 }
 .slide-nft:hover {
   background-color: #088f8fee;
-  height: 35vw;
+  height: 100%;
 }
 .slide-nft > img {
   width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.slide-nft > video {
+  width: 100%;
+  object-fit: cover;
   border-radius: inherit;
 }
 .slide-nft > p {
@@ -932,6 +940,7 @@ u {
   font-family: "koulen", sans-serif;
   margin-top: -1vw;
 }
+
 @media (max-width: 1200px) {
   .imageGallery {
     -moz-column-count: 4;
