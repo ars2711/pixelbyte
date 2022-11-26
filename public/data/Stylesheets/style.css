@@ -734,13 +734,24 @@ u {
 .socials2 {
   display: grid;
   margin: 0 3vw;
-  font-size: 2.5vw;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 2.7vw;
 }
 .socials {
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 33.33% 33.33% 33.33%;
 }
 .socials2 {
   grid-template-columns: 50% 50%;
+}
+.socials > a p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.socials > a p span {
+  font-size: 1.5rem;
 }
 .socials > a > div,
 .socials2 > a > div {
@@ -755,7 +766,7 @@ u {
 .socials > a > div > div > img,
 .socials2 > a > div > div > img {
   margin-top: 7vh;
-  height: 7vw;
+  height: 9vw;
   transition: all 0.7s ease-in-out;
   cursor: pointer;
 }
@@ -913,6 +924,7 @@ u {
   transition: all 0.5s ease-in-out, height 0.5s ease-in-out;
   height: 23vw;
   overflow: hidden;
+  margin-bottom: 5vw;
 }
 .slide-nft:hover {
   background-color: #088f8fee;
