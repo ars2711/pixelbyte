@@ -190,8 +190,11 @@ footer {
   width: 100%;
   height: 4vw;
   font-size: 1.5vw;
-  background-color: #3b3b3b;
-  margin-top: 5vw;
+  background-color: #3b3b3b59;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  margin-top: 3vw;
+  font-weight: 100;
 }
 footer > span {
   align-items: center;
@@ -200,6 +203,7 @@ footer > span {
   font-size: inherit !important;
   margin: 0 0.2vw;
   font-variation-settings: "FILL" 0;
+  font-weight: 200 !important;
 }
 footer:hover > span {
   font-variation-settings: "FILL" 1;
@@ -208,4 +212,37 @@ footer > a {
   text-decoration: none;
   color: var(--main-color);
   margin: 0 0.2vw;
+}
+a.profile {
+  display: flex;
+  width: 18vw;
+  font-size: 2.5vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  margin: 1vw 2vw;
+  text-decoration: none;
+  color: var(--text-color);
+  border-radius: 2vw;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  padding: 3vw 2.5vw;
+}
+a.profile > img {
+  height: 10vw;
+}
+a.profile:hover {
+  background-color: #c1c1c152;
+  transform: translateY(-1vw);
+}
+a.profile > h2 {
+  font-size: 2.5vw;
+  margin: 3vw 0 0 0;
+}
+a.profile > h3 {
+  font-size: 1.5vw;
+  font-weight: 300;
+  margin: 1vw 0 0 0;
 }
