@@ -246,3 +246,8 @@ a.profile > h3 {
   font-weight: 300;
   margin: 1vw 0 0 0;
 }
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

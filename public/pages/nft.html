@@ -23,375 +23,440 @@
     <meta name="msapplication-TileColor" content="#088f8f" />
     <meta name="theme-color" content="#088f8f" />
     <title>Pixelbyte | NFTs</title>
-    <link href="../data/Stylesheets/style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="../data/Images/PixelByte_web.svg" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link
+      href="../data/Stylesheets/style2.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../data/Images/PixelByte_web.svg"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <style>
+      a.profile {
+        padding: 1vw;
+        width: auto;
+        align-self: flex-end;
+      }
+      a.profile > h2 {
+        margin-top: 0.5vw;
+      }
+      a.profile > h3 {
+        margin-top: 0.3vw;
+      }
+      a.profile > img,
+      a.profile > video {
+        height: auto;
+        max-height: 18vw;
+        max-width: 20vw;
+        border-radius: 1vw;
+      }
+    </style>
   </head>
   <body>
-  <header>
-    <div class="topnav" id="navbar">
-      <a href="#tp" target="_blank" class="nav-log"><img class="nav-logo" src="../data/Images/PixelByte_web.png" alt="PixelByte Logo"></a><a class="topnav-text">Pixelbyte</a>
-      <div class="material-symbols-outlined navbar-icons">
-        <a class="nav-icon" href="../index.html" title="Home">home</a> <a class="nav-icon active-nav-icon" href="nft.html" title="NFTs">collections_bookmark</a> <a class="nav-icon" href="about.html" title="About Us">info</a> <a class="nav-icon" href="contact.html" title="Contact Us">mail</a> 
+    <nav>
+      <div>
+        <a href="../index.html">
+          <img src="../data/Images/PixelByte_web.svg" alt="Pixelbyte logo" />
+        </a>
+      </div>
+      <div>
+        <a href="../index.html" id="home-button"
+          ><span class="material-symbols-outlined"> home </span></a
+        >
+        <a href="#" id="nft-button"
+          ><span class="material-symbols-outlined"> computer </span></a
+        >
+        <a
+          href="https://app.airnfts.com/creators/0x3103923722e92e791e8e3De5fdC90d5b8C5282F0"
+          target="_blank"
+          id="store-button"
+          ><span class="material-symbols-outlined"> store </span></a
+        >
+        <a href="about.html" id="about-button"
+          ><span class="material-symbols-outlined"> lightbulb </span></a
+        >
+        <a href="../index.html#donate" id="donate-button"
+          ><span class="material-symbols-outlined"> currency_bitcoin </span></a
+        >
+        <a href="contact.html" id="contact-button"
+          ><span class="material-symbols-outlined"> alternate_email </span></a
+        >
+      </div>
+    </nav>
+    <div class="intro" style="height: 25vw">
+      <div style="display: flex; flex-direction: row; margin-top: 8vw">
+        <img src="../data/Images/PixelByte_web.svg" alt="Pixelbyte Logo" />
+        <h1>Our <strong>NFTs</strong></h1>
       </div>
     </div>
-    <div class="menu-wrapper" id="nav2"><a href="#tp" target="_blank" class="nav-log"><img class="nav-logo" src="../data/Images/PixelByte_web.png" alt="PixelByte Logo"></a><span class="menu material-icons-round" id="mbutt">menu</span></div>
-    <div class="nav-overlay" id="monav">
-      <a href="../index.html"><div><span class="material-symbols-outlined icons" title="NFTs">home chevron_right</span> Home</div></a>
-      <a href="nft.html"><div><span class="material-symbols-outlined icons" title="NFTs">collections_bookmark chevron_right</span> NFTs</div></a>
-      <a href="about.html"><div><span class="material-symbols-outlined icons" title="NFTs">info chevron_right</span> About Us</div></a>
-      <a href="contact.html"><div><span class="material-symbols-outlined icons" title="NFTs">mail chevron_right</span> Contact Us</div></a>
-    </div>
-</header>
-  <main data-router-wrapper>
-    <div class="home-0">
-      <svg width="100%" class="pattern">
-        <pattern
-          id="pattern-chevron"
-          x="0"
-          y="0"
-          patternUnits="userSpaceOnUse"
-          width="100"
-          height="180"
-          viewBox="0 0 10 18"
-        >
-          <g id="chevron">
-            <path class="left" d="M0 0l5 3v5l-5 -3z"></path>
-            <path class="right" d="M10 0l-5 3v5l5 -3"></path>
-          </g>
-          <use x="0" y="9" xlink:href="#chevron"></use>
-        </pattern>
-        <rect
-          x="0"
-          y="0"
-          width="100%"
-          height="100%"
-          fill="url(#pattern-chevron)"
-        ></rect>
-      </svg>
-      <a href="pages/nfts.html"><div class="home-text-0">
-        Our Nfts
-</div></a>
-<center><div class="logo-topped relax" data-rellax-speed="3"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1138.11 1769.26"><defs><style>.cls-1{fill:#088f8f;}.cls-2{fill:#fff;}</style></defs><path class="cls-1" d="M621,727.49H463.84c-22.79,0-43,20.27-43,43.12s20.26,40.53,43,40.53H621c289,0,433.48,141.93,433.48,430.89,0,273.82-142,443.57-423.31,443.57H268.7c-22.86,0-40.6,20.34-40.6,43.13,0,27.91,12.69,40.53,40.6,40.53H631.15c327,0,507-207.84,507-527.23C1138.11,910,953.07,727.49,621,727.49Z"/><path class="cls-1" d="M821.24,1013.93c-78-52.8-161-65.7-254-65.91H463.84c-29,0-41.56,13.77-40.46,44.17A40.79,40.79,0,0,0,464,1031.67H565.23c40.53,0,78.61,2.52,111.56,7.57,119.14,27.91,159.67,96.35,159.67,218,0,195.22-116.61,202.79-271.23,202.79h-256V1157a41.83,41.83,0,0,0-41.83-41.83h0A41.83,41.83,0,0,0,225.57,1157v343.62a43.05,43.05,0,0,0,43.06,43h296.6c202.79,0,354.88-40.53,354.88-286.44C920.11,1158.38,899.84,1077.32,821.24,1013.93Z"/><path class="cls-2" d="M309.23,299.13H524.7C656.53,299.13,763,334.61,763,486.7c0,38-5.12,68.44-17.74,93.75q-7.68,15.25,0,30.43c2.52,12.69,10.1,20.27,20.27,25.39,2.52,2.52,10.09,2.52,17.74,2.52,45.64,0,58.27-78.6,63.38-111.56V486.7c0-197.74-134.35-271.22-321.92-271.22H266.17c-27.9,0-40.6,12.69-40.6,40.53V769.32a41.82,41.82,0,0,0,41.83,41.82h0a41.82,41.82,0,0,0,41.83-41.82Z"/><path class="cls-2" d="M468.89,0H43.05C17.74,0,0,15.22,0,40.6V1726.2c0,22.79,20.26,43.06,43.05,43.06,27.91,0,40.6-15.15,40.6-43.06V83.65H468.89c43.61,0,87.27,1.16,130.74,4.8,40.32,3.37,80.56,8.86,119.94,18.24,35.9,8.55,71.19,20.4,104,37.34,31,16,59.7,36.65,83.71,62.08,25.29,26.8,44.93,58.45,58.93,92.48C983.06,339.46,992,383.24,996,427.13c1.77,19.22,3.3,38.53,2.55,57.84-.47,12.22-3.44,24.12-5.09,36.19-1.12,8.19-2.55,17.28.93,25.12,9.75,22,36.74,27.84,57.52,20,20-7.58,23.61-33.88,26.43-52.52a386.08,386.08,0,0,0,4-57.45C1082.37,91.3,793.4,0,468.89,0Z"/><circle class="cls-2" cx="987.88" cy="660.78" r="46.24"/><circle class="cls-1" cx="271.81" cy="994.25" r="46.24"/></svg></div></center><br>
-    </div>
-    </div>
-    <section data-router-view="index">
-    <div class="home-5">
-      <p class="home-text2"><span class="material-symbols-outlined">mode_heat</span>Hot</p>
-      <section class="splide" id="slider1">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Micro.Shiba-1.png.png" alt="">
-                <p>Micro Shiba</p>
-                <p>The Micro Shiba Moon NFT</p>
-              </div>
+    <h2>Hot</h2>
+    <section class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Micro.Shiba-1.png.png"
+                alt="Micro Shiba"
+              />
+              <h2>Micro Shiba</h2>
+              <h3>The Micro Shiba Moon NFT</h3>
             </a>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Ghoul-1.png.png" alt="">
-                <p>Ghoul</p>
-                <p>The Ghoul NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Baby.Everdoge-1.png.(6).png" alt="">
-                <p>Baby EverDoge</p>
-                <p>The Baby EverDoge Moon NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Dogelon.Mars-1.png.png" alt="">
-                <p>Dogelon</p>
-                <p>The Dogelon Moon NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Aesthetic.2.png" alt="">
-                <p>Baby EverDoge</p>
-                <p>The Baby EverDoge NFT</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <p class="home-text2"><span class="material-symbols-outlined">speed</span>Fast and Furious</p>
-      <section class="splide" id="slider2">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/DOM.Charger._.F&F.(1).png" alt="">
-                <p>Dom Charger</p>
-                <p>The Dom Charger NFT</p>
-              </div>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img src="../data/Images/Ghoul-1.png.png" alt="Ghoul" />
+              <h2>Ghoul</h2>
+              <h3>The Ghoul NFT</h3>
             </a>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Brians.-.Skyline.R34.png" alt="">
-                <p>Brian's Skyline</p>
-                <p>The Brian's Skyline NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Pauls.Eclipse..png" alt="">
-                <p>Paul's Eclipse</p>
-                <p>The Paul's Eclipse NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Jetta.FNF0.png" alt="">
-                <p>Jetta</p>
-                <p>The Jetta NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <video src="../data/Images/BRIANS.SUPRA.FINAL.mp4" autoplay loop muted></video>
-                <p>Brians Supra</p>
-                <p>The Brians Supra NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <video src="../data/Images/BRIAN.SUPRA.FINAL.2.mp4" autoplay loop muted></video>
-                <p>Brians Supra</p>
-                <p>The Brians Supra NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <video src="../data/Images/BRAINS.SUPRA.FINAL.3.mp4" autoplay loop muted></video>
-                <p>Brians Supra</p>
-                <p>The Brians Supra NFT</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <p class="home-text2"><span class="material-symbols-outlined">rocket</span>Baby Everdoge</p>
-      <section class="splide" id="slider2">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Baby.Everdoge-1.png.(6).png" alt="">
-                <p>Baby Everdoge</p>
-                <p>The Baby Everdoge NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/BED.Blind.folded.png" alt="">
-                <p>Baby Everdoge</p>
-                <p>The Baby Everdoge NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/BED.Blue.Explosion.Eyes.jpg" alt="">
-                <p>Baby Everdoge</p>
-                <p>The Baby Everdoge NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/BED.Cute.eyes.png" alt="">
-                <p>Baby Everdoge</p>
-                <p>The Baby Everdoge NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Baby.EverDoge.2.png" alt="">
-                <p>Baby Everdoge</p>
-                <p>The Baby Everdoge NFT</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <p class="home-text2"><span class="material-symbols-outlined">rocket_launch</span>Dogelon</p>
-      <section class="splide" id="slider2">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Dogelon.1.jpg" alt="">
-                <p>Dogelon</p>
-                <p>The Dogelon NFT</p>
-              </div>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Baby.Everdoge-1.png.(6).png"
+                alt="Baby EverDoge"
+              />
+              <h2>Baby EverDoge</h2>
+              <h3>The Baby EverDoge Moon NFT</h3>
             </a>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Dogelon.Mars-1.png.png" alt="">
-                <p>Dogelon</p>
-                <p>The Dogelon NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Dogelon.noen.2.png" alt="">
-                <p>Dogelon</p>
-                <p>The Dogelon Poster</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Dogelon.poster.1.png" alt="">
-                <p>Dogelon</p>
-                <p>The Dogelon Poster</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Dogelon.poster.2.png" alt="">
-                <p>Dogelon</p>
-                <p>The Dogelon Poster</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Dogelon.poster.3.png" alt="">
-                <p>Dogelon</p>
-                <p>The Dogelon Poster</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Dogelon.poster.4.png" alt="">
-                <p>Dogelon</p>
-                <p>The Dogelon Poster</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/DOGELON.png" alt="">
-                <p>Dogelon</p>
-                <p>The Dogelon NFT</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <p class="home-text2"><span class="material-symbols-outlined">apps</span>Misc</p>
-      <section class="splide" id="slider2">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Shiba.Neon.png" alt="">
-                <p>Shiba</p>
-                <p>The Neon Shiba Poster</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Doge-Neon.Final.png" alt="">
-                <p>Neon Doge</p>
-                <p>The Neon Doge Poster</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Ghoul-1.png.png" alt="">
-                <p>Ghoul</p>
-                <p>The Ghoul NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/Micro.Shiba-1.png.png" alt="">
-                <p>MicroSHIBA</p>
-                <p>The MicroSHIBA moon NFT</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <a href="#">
-                <div class="slide-nft">
-                <img src="../data/Images/MicroSHIBA.Pixel.png" alt="">
-                <p>MicroSHIBA</p>
-                <p>The MicroSHIBA NFT</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <div class="spacer"></div>
-      <script>
-        Splide.defaults = {
-  type   : 'loop',
-  perPage: 3,
-  perMove: 1,
-  autoplay: true,
-  pauseOnHover: true,
-  autoHeight: true,
-}
-        var elms = document.getElementsByClassName( 'splide' );
-
-for ( var i = 0; i < elms.length; i++ ) {
-  new Splide( elms[ i ] ).mount();
-}
-        new Splide( '.splide' ).mount();
-
-      </script>
-    </div>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img src="../data/Images/Dogelon.Mars-1.png.png" alt="Dogelon" />
+              <h2>Dogelon</h2>
+              <h3>The Dogelon Moon NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Aesthetic.2.png"
+                alt="Baby EverDoge Aesthetic"
+              />
+              <h2>Baby EverDoge</h2>
+              <h3>The Baby EverDoge NFT</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
-  </main>
-    <script src="../data/Scripts/script.js"></script>
-    <script src="../data/Scripts/scroll_nav.js"></script>
+    <h2>Fast &#38; Furious</h2>
+    <section class="splide" id="slider2">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/DOM.Charger._.F&F.(1).png"
+                alt="Dom Charger"
+              />
+              <h2>Dom Charger</h2>
+              <h3>The Dom Charger NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Brians.-.Skyline.R34.png"
+                alt="Brian's Skyline"
+              />
+              <h2>Brian's Skyline</h2>
+              <h3>The Brian's Skyline NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Pauls.Eclipse..png"
+                alt="Paul's Eclipse"
+              />
+              <h2>Paul's Eclipse</h2>
+              <h3>The Paul's Eclipse NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img src="../data/Images/Jetta.FNF0.png" alt="Jetta" />
+              <h2>Jetta</h2>
+              <h3>The Jetta NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <video
+                src="../data/Images/BRIANS.SUPRA.FINAL.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+              <h2>Brians Supra</h2>
+              <h3>The Brians Supra NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <video
+                src="../data/Images/BRIAN.SUPRA.FINAL.2.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+              <h2>Brians Supra</h2>
+              <h3>The Brians Supra NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <video
+                src="../data/Images/BRAINS.SUPRA.FINAL.3.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+              <h2>Brians Supra</h2>
+              <h3>The Brians Supra NFT</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2>Baby Everdoge</h2>
+    <section class="splide" id="slider2">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Baby.Everdoge-1.png.(6).png"
+                alt="Baby Everdoge"
+              />
+              <h2>Baby Everdoge</h2>
+              <h3>The Baby Everdoge NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/BED.Blind.folded.png"
+                alt="Baby Everdoge Blindfolded"
+              />
+              <h2>Baby Everdoge</h2>
+              <h3>The Baby Everdoge NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/BED.Blue.Explosion.Eyes.jpg"
+                alt="Baby Everdoge Blue Explosion Eyes"
+              />
+              <h2>Baby Everdoge</h2>
+              <h3>The Baby Everdoge NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/BED.Cute.eyes.png"
+                alt="Baby Everdoge Cute Eyes"
+              />
+              <h2>Baby Everdoge</h2>
+              <h3>The Baby Everdoge NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Baby.EverDoge.2.png"
+                alt="Baby Everdoge Version 2"
+              />
+              <h2>Baby Everdoge</h2>
+              <h3>The Baby Everdoge NFT</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2>Dogelon</h2>
+    <section class="splide" id="slider2">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img src="../data/Images/Dogelon.1.jpg" alt="Dogelon" />
+              <h2>Dogelon</h2>
+              <h3>The Dogelon NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Dogelon.Mars-1.png.png"
+                alt="Dogelon Mars"
+              />
+              <h2>Dogelon</h2>
+              <h3>The Dogelon NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img src="../data/Images/Dogelon.noen.2.png" alt="Dogelon Neon" />
+              <h2>Dogelon</h2>
+              <h3>The Dogelon Poster</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Dogelon.poster.1.png"
+                alt="Dogelon Poster 1"
+              />
+              <h2>Dogelon</h2>
+              <h3>The Dogelon Poster</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Dogelon.poster.2.png"
+                alt="Dogelon Poster 2"
+              />
+              <h2>Dogelon</h2>
+              <h3>The Dogelon Poster</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Dogelon.poster.3.png"
+                alt="Dogelon Poster 3"
+              />
+              <h2>Dogelon</h2>
+              <h3>The Dogelon Poster</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Dogelon.poster.4.png"
+                alt="Dogelon Poster 4"
+              />
+              <h2>Dogelon</h2>
+              <h3>The Dogelon Poster</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img src="../data/Images/DOGELON.png" alt="Dogelon Classic" />
+              <h2>Dogelon</h2>
+              <h3>The Dogelon NFT</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2>Miscellaneous</h2>
+    <section class="splide" id="slider2">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img src="../data/Images/Shiba.Neon.png" alt="Neon Shiba" />
+              <h2>Shiba</h2>
+              <h3>The Neon Shiba Poster</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img src="../data/Images/Doge-Neon.Final.png" alt="Neon Doge" />
+              <h2>Neon Doge</h2>
+              <h3>The Neon Doge Poster</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img src="../data/Images/Ghoul-1.png.png" alt="Ghoul" />
+              <h2>Ghoul</h2>
+              <h3>The Ghoul NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/Micro.Shiba-1.png.png"
+                alt="MicroSHIBA Moon"
+              />
+              <h2>MicroSHIBA</h2>
+              <h3>The MicroSHIBA Moon NFT</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="profile" href="#" target="_blank">
+              <img
+                src="../data/Images/MicroSHIBA.Pixel.png"
+                alt="MicroSHIBA Pixel"
+              />
+              <h2>MicroSHIBA</h2>
+              <h3>The MicroSHIBA NFT</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2>Marketplace</h2>
+    <h3>
+      Discover the breadth of our NFT collection on our bustling marketplace.
+      Click the button below to immerse yourself in a world of creativity and
+      innovation. Join us as we redefine digital artistry one masterpiece at a
+      time.
+    </h3>
+    <a
+      href="https://app.airnfts.com/creators/0x3103923722e92e791e8e3De5fdC90d5b8C5282F0"
+      target="_blank"
+      class="button"
+      >Our Marketplace</a
+    >
+    <footer>
+      &#169; <span id="year"></span> Pixelbyte | Made with
+      <span class="material-symbols-outlined"> favorite </span> by
+      <a href="https://github.com/Abos2024" target="_blank">Arsalan</a>
+    </footer>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="../data/Scripts/script.js"></script>
+    <script src="../data/Scripts/tippy.js"></script>
     <script>
-      var rellax = new Rellax('.relax');
-      window.frames[1].stop()
+      var rellax = new Rellax(".relax");
+      window.frames[1].stop();
+    </script>
+    <script>
+      Splide.defaults = {
+        type: "loop",
+        perPage: 3,
+        perMove: 1,
+        autoplay: true,
+        pauseOnHover: true,
+        autoHeight: true,
+      };
+      var elms = document.getElementsByClassName("splide");
+
+      for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i]).mount();
+      }
+      new Splide(".splide").mount();
     </script>
   </body>
 </html>
