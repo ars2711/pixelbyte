@@ -18,7 +18,7 @@
     />
     <meta
       property="og:description"
-      content="Pixelbyte NFT Corporation is a group of people working together to of course build the best NFTs of the era. These NFTs are handcrafted by our various artists and designers and then get minted for good. If you'd like to be a cool guy, don't hesitate and buy one now!"
+      content="Pixelbyte NFT Corporation is a group of people working together to of course build the best NFTs of the era. These NFTs are handcrafted by our various artists and designers and then get minted for good. If you'd like to be a cool guy, don't hesitate and acquire one now!"
     />
     <meta name="msapplication-TileColor" content="#088f8f" />
     <meta name="theme-color" content="#088f8f" />
@@ -26,88 +26,184 @@
     <link href="data/Stylesheets/style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/x-icon" href="data/Images/PixelByte_web.svg" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
   </head>
-  <style>
-    html,
-    body {
-      background-color: black !important;
-      color: #ffffff !important;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-      margin: 0;
-      flex-direction: column;
-    }
-  </style>
   <body>
-    <p class="home-text2">Pixelbyte<br /></p>
-    <div class="links-holder-social">
-      <a href="index.html"
-        ><div class="button-main">
-          <img src="data/Images/PixelByte_web.svg" alt="Logo" />
-          <p>Pixelbyte Site</p>
-        </div></a
-      >
-      <a href="https://www.instagram.com/pixelbyte_/"
-        ><div class="button-main">
-          <img src="data/Images/Pixelbyte logo square trans.webp" alt="Logo" />
-          <p>Pixelbyte Instagram</p>
-        </div></a
-      >
+    <nav>
+      <div>
+        <a href="index.html">
+          <img src="data/Images/PixelByte_web.svg" alt="Pixelbyte logo" />
+        </a>
+      </div>
+      <div>
+        <a href="index.html" id="home-button"
+          ><span class="material-symbols-outlined"> home </span></a
+        >
+        <a href="pages/nft.html" id="nft-button"
+          ><span class="material-symbols-outlined"> computer </span></a
+        >
+        <a
+          href="https://app.airnfts.com/creators/0x3103923722e92e791e8e3De5fdC90d5b8C5282F0"
+          target="_blank"
+          id="store-button"
+          ><span class="material-symbols-outlined"> store </span></a
+        >
+        <a href="pages/about.html" id="about-button"
+          ><span class="material-symbols-outlined"> lightbulb </span></a
+        >
+        <a href="#donate" id="donate-button"
+          ><span class="material-symbols-outlined"> currency_bitcoin </span></a
+        >
+        <a href="pages/contact.html" id="contact-button"
+          ><span class="material-symbols-outlined"> alternate_email </span></a
+        >
+      </div>
+    </nav>
+    <div class="intro" style="height: 25vw">
+      <div style="display: flex; flex-direction: row; margin-top: 8vw">
+        <img src="data/Images/PixelByte_web.svg" alt="Pixelbyte Logo" />
+        <h1>Our <strong>Links</strong></h1>
+      </div>
     </div>
-    <p class="home-text2">Megabyte<br /></p>
-    <div class="links-holder-social">
-      <a href="https://www.fiverr.com/megabytepb"
-        ><div class="button-main">
-          <img src="data/Images/Logo_G-removebg.png" alt="Logo" />
-          <p>Megabyte Fiverr</p>
-        </div></a
-      >
-      <a href="https://www.instagram.com/megabyte.pb/"
-        ><div class="button-main">
-          <img src="data/Images/Untitled-2.png" alt="Logo" />
-          <p>Megabyte Instagram</p>
-        </div></a
-      >
-      <a href="https://twitter.com/MegaBytePB"
-        ><div class="button-main">
-          <img src="data/Images/Logo B TP.png" alt="Logo" />
-          <p>Megabyte Twitter</p>
-        </div></a
-      >
-      <a href="https://www.fiverr.com/share/8pjwyq"
-        ><div class="button-main">
-          <img src="data/Images/Logo W TP.png" alt="Logo" />
-          <p>Megabyte QR Code Maker</p>
-        </div></a
-      >
-      <a href="https://www.fiverr.com/share/vxaXyZ"
-        ><div class="button-main">
-          <img src="data/Images/Logo G TP.png" alt="Logo" />
-          <p>Megabyte Proofread</p>
-        </div></a
-      >
-    </div>
+    <h2>PixelByte</h2>
+    <section class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a class="profile" href="index.html" target="_blank">
+              <img
+                src="data/Images/PixelByte_web.svg"
+                alt="PixelByte Green Logo"
+              />
+              <h2>PixelByte Site</h2>
+              <h3>The Pixelbyte Website</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a
+              class="profile"
+              href="https://www.instagram.com/pixelbyte_/"
+              target="_blank"
+            >
+              <img
+                src="data/Images/Pixelbyte%20logo%20square%20trans.webp"
+                alt="PixelByte Blue Logo"
+              />
+              <h2>Instagram</h2>
+              <h3>PixelByte's Instagram</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2>MegaByte</h2>
+    <section class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a
+              class="profile"
+              href="https://www.fiverr.com/megabytepb"
+              target="_blank"
+            >
+              <img src="data/Images/Logo_G-removebg.png" alt="MegaByte Logo" />
+              <h2>Fiverr</h2>
+              <h3>Our Services Site</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a
+              class="profile"
+              href="https://www.instagram.com/megabyte.pb/"
+              target="_blank"
+            >
+              <img src="data/Images/Untitled-2.png" alt="MegaByte Insta Logo" />
+              <h2>Instagram</h2>
+              <h3>MegaByte's Instagram Page</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a
+              class="profile"
+              href="https://twitter.com/MegaBytePB"
+              target="_blank"
+            >
+              <img
+                src="data/Images/Logo%20B%20TP.png"
+                alt="MegaByte Blue Logo"
+              />
+              <h2>Twitter</h2>
+              <h3>MegaByte's Twitter Page</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a
+              class="profile"
+              href="https://www.fiverr.com/share/8pjwyq"
+              target="_blank"
+            >
+              <img
+                src="data/Images/Logo%20W%20TP.png"
+                alt="MegaByte Blue Logo"
+              />
+              <h2>QR Code Maker</h2>
+              <h3>MegaByte's QR Service</h3>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a
+              class="profile"
+              href="https://www.fiverr.com/share/vxaXyZ"
+              target="_blank"
+            >
+              <img
+                src="data/Images/Logo%20G%20TP.png"
+                alt="MegaByte Blue Logo"
+              />
+              <h2>Proofread</h2>
+              <h3>MegaByte's Proofread Service</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      &#169; <span id="year"></span> Pixelbyte | Made with
+      <span class="material-symbols-outlined"> favorite </span> by
+      <a href="https://github.com/Abos2024" target="_blank">Arsalan</a>
+    </footer>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="data/Scripts/script.js"></script>
+    <script src="data/Scripts/tippy.js"></script>
+    <script>
+      var rellax = new Rellax(".relax");
+      window.frames[1].stop();
+    </script>
+    <script>
+      Splide.defaults = {
+        type: "loop",
+        perPage: 2,
+        perMove: 1,
+        autoplay: true,
+        pauseOnHover: true,
+        autoHeight: true,
+      };
+      var elms = document.getElementsByClassName("splide");
+
+      for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i]).mount();
+      }
+      new Splide(".splide").mount();
+    </script>
   </body>
 </html>
