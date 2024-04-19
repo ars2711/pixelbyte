@@ -33,6 +33,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyCLS1g-Ki8kgw1fNiqnD56iHInEa8-lCbs",
+        authDomain: "pixel-b.firebaseapp.com",
+        projectId: "pixel-b",
+        storageBucket: "pixel-b.appspot.com",
+        messagingSenderId: "353618714149",
+        appId: "1:353618714149:web:79d6292be57daae0ee69cc",
+        measurementId: "G-EXDTW6BKB6",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </head>
   <body>
     <nav>
